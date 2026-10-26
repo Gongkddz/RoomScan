@@ -10,7 +10,13 @@
 android/local.properties
 reports/private/
 target/
-/*.exe
+*.exe
+*.apk
+*.aab
+*.msi
+*.msix
+*.whl
+/RoomScan-*.zip
 **/node_modules/
 dist/
 *.jks

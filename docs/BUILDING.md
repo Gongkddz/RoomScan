@@ -62,6 +62,10 @@ $env:ROOMSCAN_KEY_ALIAS = 'roomscan'
 
 ## 发布检查
 
+源码通过 Git 提交到仓库。EXE、APK、运行环境及其分发压缩包只上传到
+[GitHub Releases](https://github.com/Gongkddz/RoomScan/releases)，由对应版本提供下载、安装步骤、系统要求及校验值。
+`.gitignore` 排除编译产物、分发目录和签名密钥。
+
 1. 运行 Python 与查看器测试，重新生成离线资源。
 2. 构建便携 ZIP 和签名 APK，运行 `scripts/smoke-portable.py` 验证冻结服务及重建入口。
 3. 使用 Android SDK 的 `apksigner verify --verbose --print-certs` 验证 APK。
@@ -74,4 +78,4 @@ CI 检查服务和查看器测试及 Android 调试构建；正式发布密钥�
 更新 Android 依赖声明时，先在 `android/` 使用 Gradle 参数
 `-I ../scripts/android-dependencies.init.gradle :app:exportRuntimeArtifacts`，
 再在项目根目录执行 `.\.venv\Scripts\python.exe scripts/prepare-release-notices.py`。
-它会保留上游 POM、嵌入声明和许可证，并下载验证 Zeroconf 的 LGPL 对应源码附件。
+它会记录上游 POM 链接、嵌入声明和许可证，并下载验证 Zeroconf 的 LGPL 对应源码附件。

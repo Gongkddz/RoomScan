@@ -23,13 +23,16 @@
 
 ## 下载与开始
 
-在 [Releases](https://github.com/Gongkddz/RoomScan/releases) 中下载对应文件：
+源码仓库用于维护源代码、必要资源、测试、构建脚本、文档与许可证。
+编译好的 Windows 程序和 Android APK 统一通过 [GitHub Releases](https://github.com/Gongkddz/RoomScan/releases) 分发。
+
+当前预发布版本：[v0.6.0-preview](https://github.com/Gongkddz/RoomScan/releases/tag/v0.6.0-preview)。
 
 | 文件 | 用途 |
 | --- | --- |
-| `RoomScan-0.6.0-preview-windows-x64.zip` | Windows 便携版，包含 EXE、核心服务环境和 Brush |
-| `RoomScan-0.6.0-preview-android-arm64.apk` | Android 签名预览版，最低 Android 12 |
-| `SHA256SUMS.txt` | 下载文件的 SHA-256 校验值 |
+| [Windows EXE 便携包](https://github.com/Gongkddz/RoomScan/releases/download/v0.6.0-preview/RoomScan-0.6.0-preview-windows-x64.zip) | 包含 EXE、核心服务环境和 Brush，完整解压后使用 |
+| [Android APK](https://github.com/Gongkddz/RoomScan/releases/download/v0.6.0-preview/RoomScan-0.6.0-preview-android-arm64.apk) | 签名预览版，Android 12+ / ARM64 |
+| [SHA256SUMS.txt](https://github.com/Gongkddz/RoomScan/releases/download/v0.6.0-preview/SHA256SUMS.txt) | 下载文件的 SHA-256 校验值 |
 | `RoomScan-0.6.0-preview-source.zip` | 完整项目源码与构建文档 |
 | `RoomScan-third-party-sources.zip` | 随附 LGPL 组件的对应源码 |
 | GitHub 自动生成的 Source code | 此版本完整项目源码 |
