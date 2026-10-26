@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430" role="img" aria-label="RoomScan 留境 把空间，交给留境">
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102039"/><stop offset="1" stop-color="#203e56"/></linearGradient>
+<linearGradient id="edge"><stop stop-color="#86a6ff"/><stop offset="1" stop-color="#8de1c2"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#91dbd0" stop-opacity=".22"/><stop offset="1" stop-color="#91dbd0" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1280" height="430" rx="28" fill="url(#bg)"/><circle cx="1010" cy="210" r="260" fill="url(#glow)"/>
+<g fill="none" stroke="#a0bdcd" stroke-opacity=".08"><path d="M650 330L1010 115 1290 275M710 365L1070 150M770 400L1130 185M650 270L1010 55 1290 215M650 210L1010 -5 1290 155"/><path d="M750 170L1110 385M810 135L1170 350M870 100L1230 315"/></g>
+<g stroke="url(#edge)" stroke-width="2" stroke-linejoin="round" fill="#a0c8d0" fill-opacity=".05"><path d="M887 127L1012 58 1141 131 1015 205Z"/><path d="M887 127V272L1015 347V205M1141 131V276L1015 347"/><path d="M887 272L1012 198 1141 276M1012 58V198" stroke-dasharray="5 8" stroke-opacity=".4"/></g>
+<g fill="#b1eddc"><circle cx="887" cy="127" r="5"/><circle cx="1012" cy="58" r="5"/><circle cx="1141" cy="131" r="5"/><circle cx="1015" cy="205" r="6"/><circle cx="1015" cy="347" r="5"/><circle cx="887" cy="272" r="5"/><circle cx="1141" cy="276" r="5"/></g>
+<g fill="#b0c2d3" font-family="Segoe UI,Microsoft YaHei,Arial,sans-serif"><text x="70" y="84" font-size="13" letter-spacing="5">LOCAL SPACES. LASTING MEMORIES.</text><text x="66" y="184" font-size="66" font-weight="700" fill="#f4f8fc">留境 <tspan font-size="47" font-weight="400">RoomScan</tspan></text><text x="70" y="246" font-size="28" fill="#d5e6ed">把空间，交给留境。</text><text x="72" y="296" font-size="17">Android 采集  /  电脑重建  /  离线探索</text><rect x="70" y="339" width="181" height="32" rx="16" fill="#94ddc5" fill-opacity=".12"/><text x="88" y="361" font-size="12" letter-spacing="2" fill="#a9e5cf">GAUSSIAN SPLATTING</text></g>
+</svg>

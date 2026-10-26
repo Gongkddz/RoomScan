@@ -1,0 +1,8 @@
+{
+  "name": "roomscan-offline-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test/*.test.mjs", "vendor": "node vendor.mjs" },
+  "dependencies": { "@sparkjsdev/spark": "2.4.0", "three": "0.180.0" }
+}

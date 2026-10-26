@@ -1,0 +1,14 @@
+// Export actual runtime artifacts for attribution, without changing the build.
+gradle.projectsEvaluated {
+    def app = gradle.rootProject.project(':app')
+    app.tasks.register('exportRuntimeArtifacts') {
+        doLast {
+            def entries = app.configurations.releaseRuntimeClasspath.resolvedConfiguration.resolvedArtifacts.collect {
+                [coordinate: it.moduleVersion.id.toString(), file: it.file.absolutePath]
+            }
+            def destination = new File(gradle.rootProject.projectDir, '../.runtime/android-artifacts.json')
+            destination.parentFile.mkdirs()
+            destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(entries))
+        }
+    }
+}

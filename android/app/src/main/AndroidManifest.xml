@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
+    <queries><package android:name="com.google.ar.core" /></queries>
+    <application android:theme="@android:style/Theme.Material.Light.NoActionBar" android:label="留境"
+        android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher"
+        android:allowBackup="false" android:usesCleartextTraffic="false">
+        <meta-data android:name="com.google.ar.core" android:value="optional" />
+        <activity android:name=".CaptureActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".VideoCaptureActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".PairScanActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".PlaybackActivity" android:exported="false" />
+        <activity android:name=".ViewerActivity" android:exported="false" android:screenOrientation="fullSensor"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".HomeActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
